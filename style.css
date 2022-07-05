@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+/* train */
+#moving-train {
+    position: relative;
+    top: 60vh;
+    width: 100vw;
+}
+#railway {
+    position: absolute;
+    width: 5000px;
+    height: 90px;
+    left: -2000px;
+    bottom: 53px;
+}
+
+#full-train {
+    width: 300px;
+    margin: auto;
+}
+
+#train {
+    width: 250px;
+    position: relative;
+    bottom: 15px;
+}
+#little-wheels{
+    position: relative;
+    display: flex;
+    bottom: 42px;
+    left: 142px;
+}
+.little-wheel {
+    width: 24px;
+    margin: 0 6px;
+    animation: 1s linear infinite roue;
+}
+
+#big-wheels{
+    position: relative;
+    display: flex;
+    bottom: 80px;
+    left: 40px;
+    
+}
+.big-wheel {
+    width: 38px;
+    margin: 0 4px;
+
+    animation: 1.5s linear infinite roue;
+}
+
+@keyframes roue {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+.cactus {
+    width: 45px;
+    bottom: 25px;
+    right: -50px;
+    position: absolute;
+    animation: 6s linear 3s infinite    cactus1;
+}
+
+@keyframes cactus1 {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-1400px); }
+  }

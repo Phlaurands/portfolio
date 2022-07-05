@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="plane">
+        <p>avion </p>
+    </section>
+    <section id="village">
+        <p>village</p>
+    </section>
+    <section id="desert">
+        <div id="moving-train">
+            <img id="railway" src="images/railway2.png" alt="railway">
+            <div id="full-train">
+                <img id="train" src="images/all part train.png" alt="train">
+                <div id="little-wheels">
+                    <img class="little-wheel" src="images/small wheel.png" alt="little-wheel">
+                    <img class="little-wheel" src="images/small wheel.png" alt="little-wheel">
+                </div>
+                <div id="big-wheels">
+                    <img class="big-wheel" src="images/big wheel.png" alt="Big-wheel">
+                    <img class="big-wheel" src="images/big wheel.png" alt="Big-wheel">
+                </div>
+            </div>
+            <img class="cactus" src="images/cactus.png" alt="cactus">
+        </div>
+    </section>
+    <script>
+        function scrollBottom() {window.scrollTo(0, 99999);}
+        if (document.addEventListener) document.addEventListener("DOMContentLoaded", scrollBottom, false)
+        else if (window.attachEvent) window.attachEvent("onload", scrollBottom);
+    </script>
+</body>
+</html>
