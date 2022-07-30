@@ -65,12 +65,15 @@ section {
     border-radius: 15px;
 }
 
-.study img {
+.mugshot {
     display: none;
+    z-index: 100;
+    position: absolute;
+    left: 40vw;
 }
-/* .study:hover, img {
+.study:hover + .mugshot {
     display: block;
-} */
+}
 
 .wagon {
     position: relative;
